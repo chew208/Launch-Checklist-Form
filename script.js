@@ -67,7 +67,6 @@ window.onload = function() {
 
          // Change the faultyItem HTML to show there is no pilots name
          badLaunchData.style.visibility = 'visible';
-      
          badLaunchData.innerHTML = `
          <ol>
             <li id="pilotStatus">Pilot ${pilotsName} is ready</li>
@@ -76,7 +75,6 @@ window.onload = function() {
             <li id="cargoStatus">Cargo mass is ${cargoReady} and must be less than 10000</li>
          </ol>
          `
-   
          // Then get the heck out of here
          return;
       } else if (isNaN(pilotsName)  === false) {
@@ -89,6 +87,15 @@ window.onload = function() {
          launchStatusElement.innerText = "Shuttle not ready for launch";
          launchStatusElement.setAttribute("style", "color: red");
 
+         badLaunchData.style.visibility = 'visible';
+         badLaunchData.innerHTML = `
+         <ol>
+            <li id="pilotStatus">Pilot ${pilotsName} is ready</li>
+            <li id="copilotStatus">Co-pilot ${copilotsName} is ready</li>
+            <li id="fuelStatus">Fuel level is ${fulltank} and must be greater than 10000</li>
+            <li id="cargoStatus">Cargo mass is ${cargoReady} and must be less than 10000</li>
+         </ol>
+         `
          // Then get the heck out of here
          return;
       } else if (isNaN(copilotsName)  === false) {
@@ -100,6 +107,15 @@ window.onload = function() {
          launchStatusElement.innerText = "Shuttle not ready for launch";
          launchStatusElement.setAttribute("style", "color: red");
 
+         badLaunchData.style.visibility = 'visible';
+         badLaunchData.innerHTML = `
+         <ol>
+            <li id="pilotStatus">Pilot ${pilotsName} is ready</li>
+            <li id="copilotStatus">Co-pilot ${copilotsName} is ready</li>
+            <li id="fuelStatus">Fuel level is ${fulltank} and must be greater than 10000</li>
+            <li id="cargoStatus">Cargo mass is ${cargoReady} and must be less than 10000</li>
+         </ol>
+         `
          // Then get the heck out of here
          return;
       }
@@ -108,8 +124,16 @@ window.onload = function() {
 
          launchStatusElement.innerText = "Shuttle not ready for launch";
          launchStatusElement.setAttribute("style", "color: red");
- 
-      
+
+         badLaunchData.style.visibility = 'visible';
+         badLaunchData.innerHTML = `
+         <ol>
+            <li id="pilotStatus">Pilot ${pilotsName} is ready</li>
+            <li id="copilotStatus">Co-pilot ${copilotsName} is ready</li>
+            <li id="fuelStatus">Fuel level is ${fulltank} and must be greater than 10000</li>
+            <li id="cargoStatus">Cargo mass is ${cargoReady} and must be less than 10000</li>
+         </ol>
+         `  
          // Then get the heck out of here
          return;
       }
