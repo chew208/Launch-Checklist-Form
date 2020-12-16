@@ -69,7 +69,7 @@ window.onload = function() {
          badLaunchData.style.visibility = 'visible';
          badLaunchData.innerHTML = `
          <ol>
-            <li id="pilotStatus">Pilot ${pilotsName} is ready</li>
+            <li id="pilotStatus">Pilot ${pilotsName} is not ready</li>
             <li id="copilotStatus">Co-pilot ${copilotsName} is ready</li>
             <li id="fuelStatus">Fuel level is ${fulltank} and must be greater than 10000</li>
             <li id="cargoStatus">Cargo mass is ${cargoReady} and must be less than 10000</li>
@@ -91,7 +91,7 @@ window.onload = function() {
          badLaunchData.innerHTML = `
          <ol>
             <li id="pilotStatus">Pilot ${pilotsName} is ready</li>
-            <li id="copilotStatus">Co-pilot ${copilotsName} is ready</li>
+            <li id="copilotStatus">Co-pilot ${copilotsName} is not ready</li>
             <li id="fuelStatus">Fuel level is ${fulltank} and must be greater than 10000</li>
             <li id="cargoStatus">Cargo mass is ${cargoReady} and must be less than 10000</li>
          </ol>
